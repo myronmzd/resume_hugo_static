@@ -12,3 +12,8 @@ node_modules/
 .terraform/
 *.tfstate
 *.tfstate.backup
+
+public/
+resources/
+.hugo_build.lock
+.DS_Store
