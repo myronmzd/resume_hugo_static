@@ -20,7 +20,9 @@ jobs:
           extended: true
 
       - name: Build Hugo site
-        run: hugo
+        run: |
+          cd /ResWbsite &&
+          hugo
 
       - name: Upload public folder as artifact
         uses: actions/upload-artifact@v4
