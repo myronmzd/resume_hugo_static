@@ -20,7 +20,7 @@ jobs:
           extended: true
 
       - name: Build Hugo site
-        working-directory: reswebsite
+        working-directory: ResWebsite
         run:  |
           pwd
           ls -la
@@ -31,4 +31,5 @@ jobs:
         with:
           name: hugo-public
           path: public/
+
   
