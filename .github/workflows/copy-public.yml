@@ -21,7 +21,10 @@ jobs:
 
       - name: Build Hugo site
         working-directory: reswebsite
-        run: hugo
+        run:  |
+          pwd
+          ls -la
+          hugo
 
       - name: Upload public folder as artifact
         uses: actions/upload-artifact@v4
