@@ -1,0 +1,30 @@
+name: Copy Hugo public folder to Artifacts
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync-public:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Hugo repo
+        uses: actions/checkout@v4
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo
+
+      - name: Upload public folder as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hugo-public
+          path: public/
+  
