@@ -21,7 +21,7 @@ jobs:
 
       - name: Build Hugo site
         run: |
-          cd /ResWbsite &&
+          cd ResWbsite
           hugo
 
       - name: Upload public folder as artifact
