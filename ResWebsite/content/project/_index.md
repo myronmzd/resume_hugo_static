@@ -9,7 +9,6 @@ title: "Projects"
 - Trained GAN models to compose new music patterns.
 - Hosted locally with a user-friendly interface for playback and download.
 </section>
----
 
 <section class="section">
 
@@ -22,7 +21,7 @@ title: "Projects"
 - Lambda + API Gateway using AWS SAM  
 **GitHub:** _Add your repo link_
 </section>
----
+
 
 <section class="section">
 
@@ -34,14 +33,14 @@ title: "Projects"
 - Backend using **API Gateway + Lambda (Python)** with DynamoDB.
 - Managed IAM, ACM certificates, CORS, and deployment lifecycle.
 </section>
----
+
 
 <section class="section">
 
 ## 📩 AWS S3 to SNS Notification Pipeline
+
 **Architecture:** S3 → Lambda → S3 → SNS → Email  
 **Tech Stack:** Terraform, AWS (S3, Lambda, SNS, IAM), Python
-
 - Automated file processing and email notifications.
 - Secure S3 handling with real-time updates.
 </section>

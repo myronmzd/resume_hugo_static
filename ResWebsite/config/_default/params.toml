@@ -7,17 +7,17 @@
 
 colorScheme = "emerald"
 defaultAppearance = "dark" # valid options: light or dark
-autoSwitchAppearance = false
+autoSwitchAppearance = true
 
-enableA11y = false
+enableA11y = true
 enableSearch = true
-enableCodeCopy = false
+enableCodeCopy = true
 enableStructuredBreadcrumbs = false
 
 replyByEmail = false
 
 # mainSections = ["section1", "section2"]
-# robots = ""
+robots = "index, follow"
 
 disableImageOptimization = false
 disableImageOptimizationMD = false
@@ -88,7 +88,7 @@ bio = "Building cloud skills one project at a time"
   showPagination = true
   invertPagination = false
   showReadingTime = false
-  showTableOfContents = false
+  showTableOfContents = true
   # showRelatedContent = false
   # relatedContentLimit = 3
   showTaxonomies = false # use showTaxonomies OR showCategoryOnly, not both
@@ -108,10 +108,10 @@ bio = "Building cloud skills one project at a time"
   showViews = false
   showLikes = false
   showTableOfContents = false
-  showCards = false
+  showCards = true
   orderByWeight = false
   groupByYear = true
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
   constrainItemsWidth = false
 

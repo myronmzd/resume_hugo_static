@@ -25,12 +25,6 @@ name = "Skills"
 pageRef = "skills"
 weight = 30
 
-[[main]]
-name = "Certifications"
-pageRef = "certifications"
-weight = 40
-
-
 
 #[[main]]
 #  name = "Blog"

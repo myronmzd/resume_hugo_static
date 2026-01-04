@@ -12,7 +12,7 @@ I have real-world exposure to **Base24 Switch and ATM systems**, system monitori
 ---
 
 ## 💼 Professional Experience
-
+---
 
 ### Senior Technician Associate – System Monitoring & Automation (Base24 / ATM)  
 **Financial Software and Systems** – Wagle Industrial, Thane, Mumbai  
@@ -27,7 +27,15 @@ I have real-world exposure to **Base24 Switch and ATM systems**, system monitori
 - Validated recovery processes to ensure business continuity during unplanned outages.
 
 ---
+## Certifications
+---
+<section class="section">
+- **AWS Certified Solutions Architect – Associate (SAA-C03)**  
+  Issued: April 2025  
+  Validation ID: 345bc1fafa734bbb9aca12912072062e
+</section>
 
+---
 ## 🎓 Education
 
 
@@ -45,4 +53,3 @@ I have real-world exposure to **Base24 Switch and ATM systems**, system monitori
 **St. Francis School, Borivali**  
 2000 – 2015  
 **Percentage:** 68.60%
-
