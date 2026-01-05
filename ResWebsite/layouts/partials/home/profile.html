@@ -1,0 +1,171 @@
+<!-- Enhanced Homepage Profile Layout -->
+<div class="homepage-container">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title animate-fade-in">
+        {{ with .Site.Params.author.name }}{{ . }}{{ end }}
+      </h1>
+      
+      <p class="hero-headline">
+        {{ with .Site.Params.author.headline }}{{ . }}{{ end }}
+      </p>
+      
+      <p class="hero-bio">
+        {{ with .Site.Params.author.bio }}{{ . }}{{ end }}
+      </p>
+      
+      <!-- CTA Buttons -->
+      <div class="cta-buttons">
+        <a href="/project/" class="btn btn-primary">
+          <span>💼 View Projects</span>
+        </a>
+        <a href="/skills/" class="btn btn-primary">
+          <span>⚡ See Skills</span>
+        </a>
+        <a href="/about/" class="btn btn-primary">
+          <span>👤 About Me</span>
+        </a>
+      </div>
+
+      <!-- Social Links & Contact -->
+      <div class="hero-links">
+        <a href="https://github.com" class="social-link" title="GitHub">
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com" class="social-link" title="LinkedIn">
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:contact@example.com" class="social-link" title="Email">
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Decorative Element -->
+    <div class="hero-decoration"></div>
+  </section>
+
+  <!-- Quick Stats Section -->
+  <section class="stats-section">
+    <div class="stat-card">
+      <div class="stat-number">6+</div>
+      <div class="stat-label">Projects</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">10+</div>
+      <div class="stat-label">Technologies</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">3+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">99.9%</div>
+      <div class="stat-label">Uptime</div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  {{ if .Site.Params.homepage.showRecent }}
+    <section class="featured-section">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p class="section-subtitle">Showcasing recent work and expertise</p>
+      </div>
+
+      <div class="projects-grid">
+        {{ range first .Site.Params.homepage.showRecentItems (where .Site.RegularPages "Section" "project") }}
+          <article class="project-card scroll-animate">
+            <div class="project-card-content">
+              <h3 class="project-title">{{ .Title }}</h3>
+              <p class="project-excerpt">{{ .Summary | truncate 120 }}</p>
+              
+              <div class="project-tags">
+                {{ if .Params.tags }}
+                  {{ range first 3 .Params.tags }}
+                    <span class="tag">{{ . }}</span>
+                  {{ end }}
+                {{ end }}
+              </div>
+
+              <a href="{{ .Permalink }}" class="read-more">
+                Learn More →
+              </a>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+
+      {{ if .Site.Params.homepage.showMoreLink }}
+        <div class="view-all-center">
+          <a href="{{ .Site.Params.homepage.showMoreLinkDest }}" class="btn btn-primary btn-large">
+            View All Projects
+          </a>
+        </div>
+      {{ end }}
+    </section>
+  {{ end }}
+
+  <!-- Skills Highlights Section -->
+  <section class="skills-highlight-section">
+    <div class="section-header">
+      <h2>Core Expertise</h2>
+      <p class="section-subtitle">Technologies and skills I specialize in</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category scroll-animate">
+        <div class="skill-icon">☁</div>
+        <h3>Cloud & Infrastructure</h3>
+        <p>AWS services, serverless architecture, multi-region deployments</p>
+      </div>
+
+      <div class="skill-category scroll-animate">
+        <div class="skill-icon">🏗</div>
+        <h3>Infrastructure as Code</h3>
+        <p>Terraform, CloudFormation, automated deployments</p>
+      </div>
+
+      <div class="skill-category scroll-animate">
+        <div class="skill-icon">💻</div>
+        <h3>DevOps & Automation</h3>
+        <p>Python, Bash, CI/CD pipelines, system automation</p>
+      </div>
+
+      <div class="skill-category scroll-animate">
+        <div class="skill-icon">🔒</div>
+        <h3>Security & Monitoring</h3>
+        <p>CloudWatch, incident response, system monitoring</p>
+      </div>
+
+      <div class="skill-category scroll-animate">
+        <div class="skill-icon">📊</div>
+        <h3>Database Management</h3>
+        <p>DynamoDB, SQL, Redis, data optimization</p>
+      </div>
+
+      <div class="skill-category scroll-animate">
+        <div class="skill-icon">🚀</div>
+        <h3>Performance & Scaling</h3>
+        <p>High availability, cost optimization, scalability</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-banner">
+    <div class="cta-content">
+      <h2>Ready to Collaborate?</h2>
+      <p>Let's build something amazing together. Reach out to discuss your project or opportunities.</p>
+      <div class="cta-buttons-banner">
+        <a href="myronmzd22@gmail.com" class="btn btn-secondary btn-large">
+          Get In Touch
+        </a>
+        <a href="/about/" class="btn btn-secondary btn-large">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(".scroll-animate");
 
+  // If no elements, don't set up observer
+  if (elements.length === 0) return;
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach(entry => {
@@ -9,8 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.2 }
+    { 
+      threshold: 0.05,
+      rootMargin: "0px 0px -100px 0px"
+    }
   );
 
-  elements.forEach(el => observer.observe(el));
+  elements.forEach(el => {
+    // Check if element is already visible on page load
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add("show");
+    }
+    observer.observe(el);
+  });
 });
