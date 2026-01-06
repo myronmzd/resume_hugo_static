@@ -1,4 +1,4 @@
-# resume_hugo_static
+# Resume_hugo_static
 
 A Hugo-based static resume website powered by the **Blowfish** theme. This repository generates a professional personal resume, project showcase, and skills portfolio as a static HTML site deployable to any static hosting platform.
 
@@ -404,30 +404,6 @@ token: ${{ secrets.DEPLOYMENT_REPO_TOKEN }}
 
 ---
 
-## Deployment
-
-### Option 1: Deploy to Static Hosting (Netlify, Vercel, AWS S3)
-
-Deploy the contents of `ResWebsite/public/` to your hosting platform:
-
-**Netlify:**
-- Connect repository
-- Build command: `cd ResWebsite && hugo`
-- Publish directory: `ResWebsite/public`
-- Redeploys automatically on push
-
-**Vercel:**
-- Import repository
-- Build command: `cd ResWebsite && hugo`
-- Output directory: `ResWebsite/public`
-
-**AWS S3 + CloudFront:**
-```bash
-# Sync public folder to S3
-aws s3 sync ResWebsite/public/ s3://your-bucket-name/
-# Invalidate CloudFront cache (if using)
-aws cloudfront create-invalidation --distribution-id YOUR_ID --paths "/*"
-```
 
 ### Option 2: Deploy Artifact to Another Repository
 
@@ -511,3 +487,4 @@ hugo server -D
 ## License & Contact
 
 For customization help or questions about deployment, open an issue or contact the repository owner.
+
