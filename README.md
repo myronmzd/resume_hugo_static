@@ -1,4 +1,4 @@
-# Resume hugo static
+# Resume Hugo Static
 
 A Hugo-based static resume website powered by the **Blowfish** theme. This repository generates a professional personal resume, project showcase, and skills portfolio as a static HTML site deployable to any static hosting platform.
 
@@ -487,5 +487,6 @@ hugo server -D
 ## License & Contact
 
 For customization help or questions about deployment, open an issue or contact the repository owner.
+
 
 
