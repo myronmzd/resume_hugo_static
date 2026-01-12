@@ -1,6 +1,7 @@
 ---
 title: "Projects"
 ---
+<div class="project-grid">
 
 <section class="section">
 
@@ -111,6 +112,7 @@ Designed and implemented a comprehensive DR strategy across AWS regions ensuring
 
 </section>
 
+
 <section class="section">
 
 ## 📊 Financial System Monitoring Dashboard
@@ -133,3 +135,5 @@ Built comprehensive monitoring and alerting infrastructure for critical Base24 A
 **Tech Stack:** Prometheus, Grafana, ELK Stack, Nginx, SQL, Bash
 
 </section>
+
+</div>
