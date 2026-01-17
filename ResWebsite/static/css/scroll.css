@@ -31,7 +31,7 @@
    Global Text Color Override
    =================================== */
 body, body * {
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 /* ===================================
@@ -379,15 +379,15 @@ body, body * {
 .project-grid {
   display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Space between cards */
+    gap: 0; /* No gap for full width */
     justify-content: space-between;
 }
-.projects-grid .section {
-  flex: 1 1 calc(50% - 20px); /* 50% width minus the gap */
-  min-width: 300px; /* Stack on top of each other on small screens/mobile */
+.project-grid .section {
+  flex: 1 1 50%; /* 50% width for full container usage */
+  min-width: 200px; /* Stack on top of each other on small screens/mobile */
   background: rgba(255, 255, 255, 0.05); /* Optional: slight background to see the card */
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-sizing: border-box;
 }
 .section h2 {

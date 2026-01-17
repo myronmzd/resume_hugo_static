@@ -1,0 +1,262 @@
+/* ===================================
+   Common Styles
+   =================================== */
+
+/* ===================================
+   Lottie Background Animation
+   =================================== */
+#lottie-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  pointer-events: none;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+#lottie-bg > div,
+#lottie-bg svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+/* ===================================
+   Global Text Color Override
+   =================================== */
+body, body * {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* ===================================
+   Section Styling (General)
+   =================================== */
+
+section.section {
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.05) 0%, rgba(147, 197, 253, 0.05) 100%);
+  transition: all 0.3s ease;
+}
+
+section.section:hover {
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.08) 0%, rgba(147, 197, 253, 0.08) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(96, 165, 250, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  section.section {
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.15) 0%, rgba(147, 197, 253, 0.15) 100%);
+  }
+
+  section.section:hover {
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.2) 0%, rgba(147, 197, 253, 0.2) 100%);
+    box-shadow: 0 8px 16px rgba(96, 165, 250, 0.15);
+  }
+}
+
+/* ===================================
+   Typography Enhancements
+   =================================== */
+
+h2 {
+  scroll-behavior: smooth;
+  position: relative;
+  padding-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #60a5fa, #38bdf8);
+  transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+h2:hover::after {
+  width: 100%;
+}
+
+/* ===================================
+   List & Badge Styling
+   =================================== */
+
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+li {
+  margin: 0.5rem 0;
+  line-height: 1.8;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+li:hover {
+  transform: translateX(4px);
+  color: #3b82f6;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #60a5fa, #38bdf8);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+}
+
+.badge-active {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+.badge-completed {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+}
+
+.badge-production {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+/* ===================================
+   Code & Inline Elements
+   =================================== */
+
+code {
+  background: rgba(96, 165, 250, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+  color: #60a5fa;
+  transition: all 0.2s ease;
+}
+
+code:hover {
+  background: rgba(96, 165, 250, 0.2);
+  color: #3b82f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  code {
+    color: #bfdbfe;
+  }
+
+  code:hover {
+    color: #e0f2fe;
+  }
+}
+
+strong {
+  font-weight: 700;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+/* ===================================
+   Link Styling
+   =================================== */
+
+a {
+  color: #60a5fa;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(90deg, #60a5fa, #38bdf8);
+  transition: width 0.3s ease;
+}
+
+a:hover {
+  color: #3b82f6;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #93c5fd;
+  }
+
+  a:hover {
+    color: #bfdbfe;
+  }
+}
+
+/* ===================================
+   Responsive Design (Common)
+   =================================== */
+
+@media (max-width: 768px) {
+  section.section {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  h2::after {
+    height: 2px;
+  }
+
+  li:hover {
+    transform: translateX(2px);
+  }
+}
+
+/* ===================================
+   Smooth Scrolling & Focus States
+   =================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* ===================================
+   Print Styles
+   =================================== */
+
+@media print {
+  .scroll-animate,
+  section.section {
+    animation: none;
+    transition: none;
+  }
+
+  a::after {
+    display: none;
+  }
+}
