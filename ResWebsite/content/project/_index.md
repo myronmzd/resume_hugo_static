@@ -1,6 +1,7 @@
 ---
 title: "Projects"
 ---
+<main class="container"> 
 <div class="project-grid">
 
 <section class="section">
@@ -137,3 +138,4 @@ Built comprehensive monitoring and alerting infrastructure for critical Base24 A
 </section>
 
 </div>
+</main>
