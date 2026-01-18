@@ -6,26 +6,8 @@ title: "Projects"
 
 <section class="section">
 
-## 🎵 Music Generation using GANs (Final Year Project)
-**Status:** ✅ Completed | **Year:** 2021
-
-Built an AI-powered web application that generates original music compositions using **Generative Adversarial Networks (GANs)** with Python and TensorFlow.
-
-**Key Achievements:**
-- Trained GAN models on MIDI datasets to learn music patterns and composition rules
-- Created a user-friendly web interface for generating, playing, and downloading compositions
-- Achieved musical coherence across generated sequences with 85%+ validation accuracy
-- Implemented real-time audio processing for instant playback
-- Presented results at university symposium with peer recognition
-
-**Tech Stack:** Python, TensorFlow, Flask, JavaScript, SQLite
-
-</section>
-
-<section class="section">
-
 ## ☁ AWS Cloud Automation Toolkit
-**Status:** 🚀 Active | **Metrics:** 50+ CLI scripts
+**Status:** Active | **Metrics:** 50+ CLI scripts
 
 Comprehensive Bash automation library for AWS service management, reducing operational overhead by 70%.
 
@@ -44,8 +26,28 @@ Comprehensive Bash automation library for AWS service management, reducing opera
 
 <section class="section">
 
-## 🌐 Enterprise Serverless Platform (Terraform IaC)
-**Status:** 🏆 Production | **Users:** 50+
+## ☁ AWS Cloud Automation Toolkit
+**Status:** Active | **Metrics:** 50+ CLI scripts
+
+Comprehensive Bash automation library for AWS service management, reducing operational overhead by 70%.
+
+**Modules:**
+- **IAM Automation** - Role creation, policy attachment, user provisioning with audit trails
+- **S3 Management** - Bucket operations, lifecycle policies, replication, access logging
+- **VPC Orchestration** - Network setup, subnet management, security group templates
+- **EC2 Deployment** - Instance launching, auto-scaling configuration, monitoring setup
+- **Lambda Utilities** - Function packaging, deployment automation, version management
+
+**Metrics:** 5,000+ lines of battle-tested code, used across 3+ production environments
+
+**Tech Stack:** Bash, AWS CLI, Terraform, Python
+
+</section>
+
+<section class="section">
+
+## Enterprise Serverless Platform (Terraform IaC)
+**Status:**  Production | **Users:** 50+
 
 Built a completely serverless, multi-tenant SaaS application infrastructure using Infrastructure as Code (Terraform) to support enterprise clients.
 
@@ -68,8 +70,8 @@ Built a completely serverless, multi-tenant SaaS application infrastructure usin
 
 <section class="section">
 
-## 📩 Real-time Event Processing Pipeline
-**Status:** ✅ Completed | **Throughput:** 10K+ events/minute
+## Real-time Event Processing Pipeline
+**Status:**  Completed | **Throughput:** 10K+ events/minute
 
 Engineered a scalable event-driven architecture for processing file uploads with real-time notifications and compliance auditing.
 
@@ -93,8 +95,8 @@ Engineered a scalable event-driven architecture for processing file uploads with
 
 <section class="section">
 
-## 🔐 Multi-Region Disaster Recovery Framework
-**Status:** 🏆 Production | **RTO:** <5 min | **RPO:** <1 min
+## Multi-Region Disaster Recovery Framework
+**Status:**  Production | **RTO:** <5 min | **RPO:** <1 min
 
 Designed and implemented a comprehensive DR strategy across AWS regions ensuring business continuity and rapid recovery.
 
@@ -116,8 +118,8 @@ Designed and implemented a comprehensive DR strategy across AWS regions ensuring
 
 <section class="section">
 
-## 📊 Financial System Monitoring Dashboard
-**Status:** ✅ Active | **Uptime:** 99.97% | **Monitored Systems:** 150+
+## Financial System Monitoring Dashboard
+**Status:**  Active | **Uptime:** 99.97% | **Monitored Systems:** 150+
 
 Built comprehensive monitoring and alerting infrastructure for critical Base24 ATM/Switch systems handling millions in daily transactions.
 
