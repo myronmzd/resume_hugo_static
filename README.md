@@ -44,6 +44,7 @@ This project uses **GitHub Actions** to automatically build the Hugo site and cr
 ```bash
 cd ResWebsite
 hugo server -D
+hugo --gc --minify
 ```
 - Opens: http://localhost:1313/
 - Live reload enabled (browser auto-refreshes on content changes)

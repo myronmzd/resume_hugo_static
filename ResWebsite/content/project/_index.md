@@ -6,10 +6,10 @@ title: "Projects"
 
 <section class="section">
 
-## ☁ AWS Cloud Automation Toolkit
+## AWS CLOUD PROJECTS PORTFOLIO
 **Status:** Active | **Metrics:** 50+ CLI scripts
 
-Comprehensive Bash automation library for AWS service management, reducing operational overhead by 70%.
+Comprehensive Bash automation library for AWS service management
 
 **Modules:**
 - **IAM Automation** - Role creation, policy attachment, user provisioning with audit trails
@@ -21,26 +21,23 @@ Comprehensive Bash automation library for AWS service management, reducing opera
 **Metrics:** 5,000+ lines of battle-tested code, used across 3+ production environments
 
 **Tech Stack:** Bash, AWS CLI, Terraform, Python
-
+<a herf= "https://github.com/myronmzd/AWS_Example_">Github_repo</a>
 </section>
 
 <section class="section">
 
-## ☁ AWS Cloud Automation Toolkit
-**Status:** Active | **Metrics:** 50+ CLI scripts
+## Personal Resume Website 
+**Status:** Done | **Metrics:** Simple static website low cost
 
-Comprehensive Bash automation library for AWS service management, reducing operational overhead by 70%.
+CAWS, Terraform, GitHub Actions 
 
 **Modules:**
-- **IAM Automation** - Role creation, policy attachment, user provisioning with audit trails
-- **S3 Management** - Bucket operations, lifecycle policies, replication, access logging
-- **VPC Orchestration** - Network setup, subnet management, security group templates
-- **EC2 Deployment** - Instance launching, auto-scaling configuration, monitoring setup
-- **Lambda Utilities** - Function packaging, deployment automation, version management
+•	Built a Hugo-based static resume website
+•	Provisioned AWS infrastructure using Terraform (S3, CloudFront, IAM)
+•	Implemented CI/CD with GitHub Actions for automated build & deployment
+    GitHub: <a href="https://github.com/myronmzd/resume_hugo_static">Hugo_static_website</a> and <a href="https://github.com/myronmzd/resumeweb">Infra_to_host_Website</a>
 
-**Metrics:** 5,000+ lines of battle-tested code, used across 3+ production environments
-
-**Tech Stack:** Bash, AWS CLI, Terraform, Python
+**Tech Stack:** hugo, AWS CLI, Terraform
 
 </section>
 
@@ -57,12 +54,7 @@ Built a completely serverless, multi-tenant SaaS application infrastructure usin
 - **Data Layer:** DynamoDB with on-demand scaling for variable workloads
 - **DNS & Certificates:** Route 53 with automated SSL/TLS via ACM
 - **Security:** IAM policies with least privilege, VPC endpoints for private access
-
-**Achievements:**
-- 99.95% uptime SLA maintained over 18 months
-- Cost optimization: 60% reduction vs traditional server architecture
-- Automated CI/CD pipeline with GitHub Actions for zero-downtime deployments
-- Multi-region failover capability for disaster recovery
+    <a href="https://github.com/myronmzd/New_pro1">web_app_github_repo</a>
 
 **Tech Stack:** Terraform, AWS (S3, CloudFront, Lambda, API Gateway, DynamoDB, Route 53, ACM), Python, GitHub Actions
 
@@ -70,72 +62,20 @@ Built a completely serverless, multi-tenant SaaS application infrastructure usin
 
 <section class="section">
 
-## Real-time Event Processing Pipeline
-**Status:**  Completed | **Throughput:** 10K+ events/minute
+## AWS S3 TO SNS NOTIFICATION PIPELINE
+**Status:**  Completed 
 
-Engineered a scalable event-driven architecture for processing file uploads with real-time notifications and compliance auditing.
+Description: Automated file processing and notification system using AWS S3 and SNS. When files are uploaded, Lambda processes them, stores output, and triggers SNS email alerts. 
 
-**Event Flow:** S3 Uploads → EventBridge → Lambda → DynamoDB → SNS → Email/Slack
+Link - <a href="https://github.com/myronmzd/AWS_Example_/tree/main/sns/terraform_sns">Github_repo</a>
 
-**Features:**
-- **Async Processing:** Lambda functions process 500+ files concurrently without bottlenecks
-- **Smart Routing:** Event-based filtering sends notifications based on file type and size
-- **Audit Trail:** Complete logging in CloudWatch and DynamoDB for compliance reporting
-- **Error Handling:** Dead-letter queues for failed processes with automatic retry logic
-- **Cost Efficient:** Pay-per-invocation model; handles burst traffic seamlessly
+**Key Features**:
+•	Automated file processing & notifications.
+•	Secure S3 handling & real-time updates.
+•	Terraform for infrastructure automation.		
+**Architecture**: S3 Input → Lambda → S3 Output → SNS → Email<br>
+**Tech Stack**: Terraform, AWS (S3, Lambda, SNS, IAM), Python, AWS CLI. Tech Stack: Terraform, AWS (S3, Lambda, SNS, IAM), Python, AWS CLI.
 
-**Observability:**
-- CloudWatch dashboards tracking latency, error rates, and throughput
-- Custom metrics for business KPIs (processing time, success rate)
-- Alerts for anomalies with SNS/Slack integration
-
-**Tech Stack:** AWS (S3, EventBridge, Lambda, DynamoDB, SNS), Terraform, Python, CloudWatch
-
-</section>
-
-<section class="section">
-
-## Multi-Region Disaster Recovery Framework
-**Status:**  Production | **RTO:** <5 min | **RPO:** <1 min
-
-Designed and implemented a comprehensive DR strategy across AWS regions ensuring business continuity and rapid recovery.
-
-**Components:**
-- **Database Replication:** RDS multi-region read replicas with automatic failover
-- **Backup Strategy:** Automated daily snapshots with 30-day retention; cross-region backup copies
-- **Network Failover:** Route 53 health checks with weighted routing for instant regional switchover
-- **Testing Program:** Monthly DR drills validating recovery procedures and team readiness
-
-**Metrics:**
-- Achieved <5 minute RTO through automation and pre-provisioned standby infrastructure
-- <1 minute RPO with continuous data replication
-- 100% test success rate in 12 monthly DR exercises
-
-**Tech Stack:** AWS (RDS, S3, Route 53, CloudFormation), Terraform, Bash scripts
-
-</section>
-
-
-<section class="section">
-
-## Financial System Monitoring Dashboard
-**Status:**  Active | **Uptime:** 99.97% | **Monitored Systems:** 150+
-
-Built comprehensive monitoring and alerting infrastructure for critical Base24 ATM/Switch systems handling millions in daily transactions.
-
-**Capabilities:**
-- **Real-time Monitoring:** Sub-second latency alerts on system anomalies
-- **Custom Metrics:** SQL-based analysis of transaction logs, response times, error patterns
-- **Incident Response:** Automated escalation workflows reducing MTTR from 30+ minutes to <5 minutes
-- **Nginx HA:** Load balancer configuration for zero-downtime deployments
-- **Log Analysis:** ELK stack integration for centralized log aggregation
-
-**Impact:**
-- Maintained 99.9%+ system uptime during peak transaction periods
-- Prevented 15+ potential outages through proactive alerting
-- Reduced incident resolution time by 85% through automation
-
-**Tech Stack:** Prometheus, Grafana, ELK Stack, Nginx, SQL, Bash
 
 </section>
 

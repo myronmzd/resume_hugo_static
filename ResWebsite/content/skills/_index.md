@@ -2,119 +2,113 @@
 title: "Skills & Expertise"
 ---
 
-## ☁ Cloud & Infrastructure
+## ☁ Cloud & AWS
 
-**AWS Services**
-- Compute: EC2, Lambda, ECS, Lightsail
-- Storage: S3, EBS, Glacier, CloudFront
-- Networking: VPC, Route 53, CloudFront, ELB
-- Databases: RDS, DynamoDB, Athena, ElastiCache
-- Management: CloudWatch, Systems Manager, CloudFormation
+**AWS Services (Hands-on)**
+- Compute: EC2, Lambda  
+- Storage: S3  
+- Networking: VPC (basic setup), Route 53  
+- Monitoring: CloudWatch (logs, metrics, alerts)  
+- Security: IAM (users, roles, policies)
 
-**Platform Expertise**
-- Multi-region deployments and disaster recovery
-- Serverless architecture design and optimization
-- Cost optimization and resource management
-- Security best practices and IAM policies
+**Cloud Experience**
+- Supporting AWS-based production environments  
+- Basic serverless application setup (Lambda, API Gateway)  
+- Infrastructure provisioning using Terraform & CloudFormation (learning + projects)  
+- Hands-on experience through personal AWS projects and automation scripts  
 
 ---
 
 ## 🏗 Infrastructure as Code & Automation
 
-**Terraform** ⭐⭐⭐⭐⭐
-- State management, modules, workspaces
-- Multi-environment deployments
-- Infrastructure documentation through code
+**Terraform (Working Knowledge)**
+- Writing basic modules and configurations  
+- Provisioning AWS resources (EC2, VPC, S3, Lambda)  
+- Used in personal cloud projects  
 
-**CloudFormation & SAM**
-- Template authoring and stacks
-- Lambda + API Gateway orchestration
-- Custom resources and nested stacks
+**CloudFormation & AWS SAM**
+- Creating EC2 and serverless resources  
+- Understanding of stack-based deployments  
 
-**Scripting & Automation**
-- **Bash:** 500+ lines of production scripts
-- **Python:** Lambda functions, automation tools, data processing
-- **AWS CLI:** Advanced queries, batch operations, custom workflows
+**Automation & Scripting**
+- Bash scripting for task automation  
+- Python (basic) for Lambda and utility scripts  
+- AWS CLI for automation and operations  
 
 ---
 
 ## 💻 Programming & Development
 
 **Languages**
-- Python (Advanced) - DevOps, data processing, web backends
-- Bash (Advanced) - System automation, CI/CD pipelines
-- JavaScript (Intermediate) - Web interfaces, frontend interactions
-- SQL (Advanced) - Query optimization, database design
+- Python (Basic) – scripting, Lambda functions  
+- Bash – automation scripts  
+- SQL (Basic to Intermediate) – SELECT, JOINs, reporting queries  
 
-**Frameworks & Tools**
-- Flask & FastAPI - RESTful API development
-- TensorFlow - Machine learning and neural networks
-- Docker & Containerization
-- GitHub Actions - CI/CD pipeline automation
+**Development Exposure**
+- REST APIs using AWS Lambda & API Gateway (projects)  
+- Basic understanding of backend workflows  
 
 ---
 
-## 🌐 Networking & Security
+## 🌐 Systems, Networking & Support
 
-**Network Architecture**
-- TCP/IP, Subnetting, CIDR notation
-- DNS configuration and Route 53
-- NAT, VPN, VPN Tunneling
-- Load balancing and health checks
+**Systems**
+- Linux administration & troubleshooting  
+- Server monitoring and health checks  
 
-**Security & Compliance**
-- IAM policies and role-based access control
-- SSL/TLS certificates and HTTPS
-- Encryption (at-rest and in-transit)
-- Security auditing and vulnerability assessment
-- Incident management and response
+**Production Support**
+- Incident management & ticket handling  
+- Log analysis and issue debugging  
+- SLA-based support in 24×7 environments  
+- Disaster Recovery (DR) drills and validation  
+
+**Networking Basics**
+- TCP/IP fundamentals  
+- DNS (Route 53)  
+- Basic VPC understanding  
 
 ---
 
-## 📊 Monitoring, Logging & Observability
+## 📊 Monitoring & Operations
 
-**Monitoring Stack**
-- CloudWatch - Metrics, logs, alarms, dashboards
-- Prometheus & Grafana - Open-source monitoring
-- ELK Stack (Elasticsearch, Logstash, Kibana) - Centralized logging
+**Monitoring Tools**
+- CloudWatch (logs, alarms, dashboards)  
+- System and application log monitoring  
 
-**Operational Excellence**
-- System performance analysis and optimization
-- Incident response and root cause analysis
-- Distributed tracing and debugging
-- SLA/SLO definition and tracking
+**Operational Skills**
+- Root cause analysis  
+- System uptime monitoring (99.9% availability exposure)  
+- Coordination with cross-functional teams during incidents  
 
 ---
 
 ## 🛠 Tools & Technologies
 
-**DevOps & CI/CD**
-- Git & GitHub for version control
-- GitHub Actions for automated workflows
-- Docker for containerization
-- Jenkins for pipeline orchestration
+- Git & GitHub  
+- GitHub Actions (CI/CD – project-based)  
+- Docker (basic usage)  
+- Terraform (learning + projects)  
 
-**Databases & Data**
-- **Relational:** SQL, PostgreSQL, MySQL
-- **NoSQL:** DynamoDB, Redis, MongoDB
-- **Message Queues:** Kafka, SNS, SQS
-- **Data Processing:** AWS Athena, analytics
+**Data & Reporting**
+- SQL-based monitoring queries  
+- Excel (Pivot Tables, Lookups, reporting)  
 
-**Specialized Experience**
-- Base24 Switch systems (financial infrastructure)
-- ATM system monitoring and maintenance
-- Payment processing and transaction systems
-- Nginx configuration and high availability
+---
+
+## 🏦 Domain Experience
+
+- Base24 Switch systems (ATM & financial transactions)  
+- Production monitoring for critical financial services  
+- Transaction flow monitoring and issue resolution  
 
 ---
 
 ## 📈 Soft Skills
 
-- Technical documentation and knowledge sharing
-- Incident management and crisis response
-- Team collaboration and cross-functional communication
-- Continuous learning and skill development
-- Problem-solving and root cause analysis
+- Strong incident handling under pressure  
+- Clear communication during production issues  
+- Team collaboration across support and engineering teams  
+- Continuous learning in cloud & DevOps  
 
 ---
 
@@ -122,5 +116,3 @@ title: "Skills & Expertise"
 
 - **AWS Certified Solutions Architect – Associate (SAA-C03)**
   - Issued: April 2025
-  - Covers: AWS architecture, design principles, high availability
-  - Validation ID: 345bc1fafa734bbb9aca12912072062e
